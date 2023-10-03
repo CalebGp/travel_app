@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/home.dart';
+import 'package:travel_app/screens/splash.dart';
+import 'package:travel_app/themes/theme.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const TravelApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class TravelApp extends StatelessWidget {
+  const TravelApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
+      theme: myTheme,
     );
   }
 }
