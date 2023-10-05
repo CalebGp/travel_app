@@ -1,11 +1,11 @@
 import 'dart:io';
 
-import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_app/screens/home.dart';
 
+// ignore: must_be_immutable
 class SplashPage extends StatelessWidget {
   late BuildContext context;
 
@@ -59,10 +59,9 @@ class SplashPage extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
-            Text(
+            const Text(
               "Find Your Dream\nDestination With Us",
-              style:
-                  GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.w500),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
               textAlign: TextAlign.center,
             )
           ],
@@ -73,19 +72,17 @@ class SplashPage extends StatelessWidget {
 
   void initState() {
     startTimer();
-    print("object");
   }
 
   startTimer() async {
-    var duration = Duration(seconds: 2);
+    var duration = const Duration(seconds: 2);
     sleep(duration);
     route();
     return;
   }
 
   route() {
-    Navigator.of(context).push(_createRoute(HomeScreen()));
-    print("object");
+    Navigator.of(context).push(_createRoute(const HomeScreen()));
   }
 
   Route _createRoute(destination) {

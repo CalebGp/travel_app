@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ButtonOfRow extends StatelessWidget {
   final String text;
@@ -11,7 +10,7 @@ class ButtonOfRow extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: active ? Colors.black : Colors.grey.withOpacity(1),
+        color: active ? Colors.black : Color.fromARGB(255, 244, 243, 243),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(
@@ -22,7 +21,7 @@ class ButtonOfRow extends StatelessWidget {
             ? Text(
                 text,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.roboto(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
@@ -32,7 +31,7 @@ class ButtonOfRow extends StatelessWidget {
             : Text(
                 text,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.roboto(
+                style: const TextStyle(
                   color: Colors.grey,
                   fontSize: 16,
                   fontWeight: FontWeight.w500,

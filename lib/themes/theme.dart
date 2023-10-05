@@ -6,17 +6,12 @@ ThemeData myTheme = ThemeData(
   primaryColor: ThemeColors.primaryColor,
   brightness: Brightness.dark,
   textTheme: TextTheme(
-      // bodyMedium: GoogleFonts.lobster(
-      //   fontSize: 16,
-      // ),
-      // bodyLarge: GoogleFonts.lobster(
-      //   fontSize: 20,
-      //   fontWeight: FontWeight.bold,
-      // )
-      // bodyLarge: TextStyle(
-      //   fontSize: 28,
-      //   fontWeight: FontWeight.bold,
-      //   fontFamily:
-      // ),
-      ),
+    bodyMedium: GoogleFonts.roboto(
+      fontSize: 16,
+    ),
+    bodyLarge: GoogleFonts.roboto(
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+    ),
+  ),
 );

@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:travel_app/screens/home.dart';
 import 'package:travel_app/screens/splash.dart';
@@ -14,7 +16,7 @@ class TravelApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: const HomeScreen(),
       theme: myTheme,
     );
   }
