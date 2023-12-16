@@ -188,7 +188,9 @@ class HomeScreen extends StatelessWidget {
                   local: "Tokyo",
                   location: "Tokyo, Japan",
                   rate: "4.8",
-                  onTap: () {},
+                  onTap: () {
+                    print("oi");
+                  },
                 ),
                 SizedBox(
                   width: 20,
@@ -205,10 +207,6 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      bottomNavigationBar: PersistentBottomNavBar(
-        hideNavigationBar: false,
-        navBarStyle: NavBarStyle.style13,
       ),
     );
   }
